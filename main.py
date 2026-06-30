@@ -48,8 +48,8 @@ suavizacao = 0.2  # filtro elástico: quanto menor, mais suave (e mais "atrasado
 # Esses valores definem o quanto o servo se move de ponta a ponta da imagem.
 # Se o rastreamento estiver "curto" (não acompanha o rosto até a borda),
 # aumente. Se estiver "nervoso"/exagerado, diminua.
-FOV_X = 64
-FOV_Y = 40
+FOV_X = 110
+FOV_Y = 110
 
 min_angulo_x = 90 - (FOV_X // 2)
 max_angulo_x = 90 + (FOV_X // 2)
@@ -79,9 +79,9 @@ def get_face_center(results, width, height):
 # ==========================================
 # 4. LOOP PRINCIPAL
 # ==========================================
-camera = cv2.VideoCapture(1)  # confira se o índice é 0, 1 ou 2 na câmera nova
-camera.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
-camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
+camera = cv2.VideoCapture(0)  # confira se o índice é 0, 1 ou 2 na câmera nova
+camera.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
+camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
 
 # Confirma a resolução que a câmera de fato aplicou
 largura_real = camera.get(cv2.CAP_PROP_FRAME_WIDTH)
