@@ -8,3 +8,4 @@ Este projeto, apresentado por Guilherme Tavares e Davi Sarttorreto, consiste em 
 Dependencies Command line for download:
 
 pip install mediapipe opencv-python pyserial numpy
+
