@@ -42,7 +42,7 @@ detector = vision.FaceLandmarker.create_from_options(options)
 # ==========================================
 servo_x_atual = 90.0
 servo_y_atual = 90.0
-suavizacao = 0.2  # filtro elástico: quanto menor, mais suave (e mais "atrasado")
+suavizacao = 0.05  # filtro elástico: quanto menor, mais suave (e mais "atrasado")
 
 # Campo de visão (ajuste conforme a sua lente/distância da câmera)
 # Esses valores definem o quanto o servo se move de ponta a ponta da imagem.
