@@ -25,10 +25,12 @@ if usar_serial:
 # 2. CONFIGURAÇÃO DO DETECTOR DE ROSTO (MEDIAPIPE)
 # ==========================================
 base_options = python.BaseOptions(
+# Classificador, segmenta as áreas do rosto, analisa pixels por vizinhança
     model_asset_path="face_landmarker.task"
 )
 
 options = vision.FaceLandmarkerOptions(
+# Fizemos do jeito que consta na documentação
     base_options=base_options,
     output_face_blendshapes=False,
     output_facial_transformation_matrixes=False,
